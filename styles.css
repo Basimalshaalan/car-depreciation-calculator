@@ -1,8 +1,8 @@
 html{
     /* background-color: rgb(72, 137, 199); */
     background-image: linear-gradient(rgb(72, 137, 199), rgb(113, 161, 206));
-    height: 100%;
-    color: rgb(248, 252, 255);
+    color:rgb(6, 34, 60);
+    font-weight: 200;
 }
 
 body {
@@ -12,18 +12,61 @@ body {
 
 }
 
-h1 {
+img {
+    width:100px
+} 
+
+header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 50px;
+    justify-content: center;
+    color: rgb(248, 252, 255);
+}
+
+/* only apply this style to the image inside the header */
+header img {
+    margin-left: 30px;
+}
+
+.title{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.title h1  {
+    margin-bottom: 3px;
+}
+
+.title h3 {
     margin:0;
-    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+form{
+    padding: 50px;
+    margin: 0px auto;
+    width: 100%;
+    max-width: 448px;
+    background: white;
+    border-radius: 4px;
+    box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
 
 
-.title {
-    margin-bottom: 20px;
+label {
+    margin-right: 20px;
 }
 
-div {
+.container{
+    width: 70%;
+    margin: 50px 0;
+    display: flex;
+    flex-direction: column;
 }
+
 
 .section{
     margin-bottom: 20px;
@@ -32,7 +75,7 @@ div {
 
 button{
     display:inline-block;
-    padding:0.35em 1.2em;
+    padding:1em 3em;
     border:0.1em solid #FFFFFF;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
@@ -43,30 +86,27 @@ button{
     color:#000000;
     text-align:center;
     transition: all 0.2s;
-    }
-
-    button:hover{
-    color:#ffffff;
-    background-color:#000000;
-    }
-    
-    @media all and (max-width:30em){
-    button{
-    display:block;
-    margin:0.4em auto;
-    }
-    }
-
-.container{
-    width: 70%;
-    margin: 50px 0;
-    display: flex;
-    flex-direction: column;
 }
 
-input {
+button:hover{
+    color:#ffffff;
+    background-color:#000000;
+}
+
+@media all and (max-width:30em){
+    button{
+        display:block;
+        margin:0.4em auto;
+    }
+}
+
+input, select {
     padding:10px;
     border:0;
     box-shadow:0 0 15px 4px rgba(0,0,0,0.06);
     border-radius: 3px;
+}
+
+select {
+    padding-right: 30px;
 }
