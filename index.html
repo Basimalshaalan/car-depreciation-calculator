@@ -10,20 +10,23 @@
     
     <body>
         <div class="container">
-            <div class="title">
-                <h1>حساب قيمة السيارة</h1>
-                <h1>Car depriciation calculator</h1>
-            </div>
+            <header>
+                <div class="title">
+                    <h1>حساب قيمة السيارة</h1>
+                    <h3>Car Depreciation Calculator</h3>
+                </div>
+                <img src="images/deer.png"/>
+            </header>
 
             <form action="results.html" method="GET" >
-            <div class="section">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" required placeholder="User" >
-            </div>
-            <div class="section">
-                <label for="email">Email</label> 
-                <input type="email" name="email" id="email" required>
-            </div>
+                <div class="section">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" required placeholder="User" >
+                </div>
+                <div class="section">
+                    <label for="email">Email</label> 
+                    <input type="email" name="email" id="email" required>
+                </div>
                 <div class="section">
                     <label for="age">Age</label> 
                     <input type="number" name="age" id="age" min="1" max="200" steps="1">
@@ -32,61 +35,58 @@
                     <label for="date">Birthdate</label>
                     <input type="date" name=date id="date" min="2019-06-18">
                 </div>
-                <div>Favorite Food  <div>
+                <div class="section">
+                    <h3>Favorite Food</h3>
                     <label for="bannana">Bannanna</label>
                     <input type="bannana" name="bannana" id="bannana">
                 </div>
-                <div>
+                <div class="section">
                     <label for="apple">Apple</label>
                     <input type="apple" name="apple" id="apple">
                 </div>
-                    </div>
-                    <div>
-                    Gender 
-                    <div>
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="male">
-                    </div>
-                    <div>
-                        <label for="female">Female</label>
-                        <input type="radio" name="gender" id="female">
-                    </div>
-                    </div>
-                    <div>
+                <div class="section">
+                    <h3>Gender</h3>
+                    <label for="male">Male</label>
+                    <input type="radio" name="gender" id="male">
+                </div>
+                <div class="section">
+                    <label for="female">Female</label>
+                    <input type="radio" name="gender" id="female">
+                </div>
+                <div class="section">
                     <label for="eyeColor">Eye color</label>
                     <select name="eyeColor" id="eyeColor">
                         <option label="Green2" value="Green">Green</option>
                         <option label="Red" value="Red">Red</option>
                     </select>
-                    </div>
-                    <div>
+                </div>
+                <div class="section">
                     <label for="bio">Bio</label>
                     <textarea id="bio" name="bio">
                         My name is Basim
                     </textarea>
-                    </div>
-                    <input type="hidden" name="hidden" value="hi">
-                    <div>
+                </div>
+                <div class="section">
                     <label for="file">File</label>
                     <input id="file" type="file" name="file">
-                    </div>
-                <div>
+                </div>
+                <div class="section">
                     <label for="phone">Phone</label>
                     <input type="tel" name="phone" id="phone">
                 </div>
-                <div>
+                <div class="section">
                     <label for="url">URL</label>
                     <input type="url" name="url" id="url">
                 </div>
-                <div>
+                <div class="section">
                     <label for="color">Color</label>
                     <input type="color" name="color" id="color">
                 </div>
-                <div>
+                <div class="section">
                     <label>Password</label>
                     <input type="password" name="Password">
                 </div>
-                <div>
+                <div class="section">
                     <button type="reset">Reset</button>
                     <button type="submit">Submit</button>
                 </div>
