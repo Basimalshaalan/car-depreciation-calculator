@@ -19,7 +19,7 @@
                 <img src="images/deer2.svg"/>
             </header>
 
-            <form action="results.html" method="GET" >
+            <form>
                 <div class="section">
                     <label for="name">Name</label>
                     <input type="text" name="name" id="name" required placeholder="User" >
@@ -84,9 +84,6 @@
                         <option label="Audi" value="Audi">Audi</option>
                         <option label="Land Rover" value="landRover">Land Rover</option>
                         <option label="Jaguar" value="Jaguar">Jaguar</option>
-                        
-                        
-
                     </select>
                 </div>
                 <div class="section">
@@ -117,9 +114,15 @@
                 </div>
                 <div class="section">
                     <button type="reset">Reset</button>
-                    <button type="calculate">Calculate</button>
+                    <button onclick="calculate()" type="calculate">Calculate</button>
                 </div>
             </form>
+            <button onclick="calculate()" type="calculate">Calculate</button>
+
+
+            <h2 id="result">The expected price for your car is <span>...</span></h2>
         </div>
     </body>
+
+    <script type="text/javascript" src="script.js"></script>
 </html>

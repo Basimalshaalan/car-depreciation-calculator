@@ -110,3 +110,14 @@ input, select {
 select {
     padding-right: 30px;
 }
+
+#result {
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+#result span {
+    font-weight: 900;
+    margin-left: 8px;
+}
