@@ -86,7 +86,6 @@
                     <label for="age">Age</label> 
                     <input type="number" name="age" id="age" min="1" max="200" steps="1">
                 </div>
-
                 <div class="section">
                   <label for="price">Price</label>
                   <input type="price" name="price" id="price" required placeholder="price" >
@@ -96,9 +95,15 @@
                 
                 <div class="section">
                     <button type="reset">Reset</button>
-                    <button type="calculate">Calculate</button>
+                    <button onclick="calculate()" type="calculate">Calculate</button>
                 </div>
             </form>
+            <button onclick="calculate()" type="calculate">Calculate</button>
+
+
+            <h2 id="result">The expected price for your car is <span>...</span></h2>
         </div>
     </body>
+
+    <script type="text/javascript" src="script.js"></script>
 </html>
