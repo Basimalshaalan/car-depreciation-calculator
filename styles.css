@@ -81,6 +81,17 @@ label {
 
 .section{
     margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section input {
+    width: 250px;
+}
+
+.section select{
+    width: 270px;
 }
 
 
