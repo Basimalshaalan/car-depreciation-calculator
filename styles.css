@@ -22,7 +22,7 @@ header{
     align-items: center;
     margin-bottom: 50px;
     justify-content: center;
-    color: rgb(248, 252, 255);
+    color: #f8fcff;
 }
 
 /* only apply this style to the image inside the header */
@@ -50,7 +50,7 @@ form{
     margin: 0px auto;
     width: 100%;
     max-width: 448px;
-    background: white;
+    background: #f8fcff;
     border-radius: 4px;
     box-shadow: rgba(60, 66, 87, 0.12) 0px 7px 14px 0px, rgba(0, 0, 0, 0.12) 0px 3px 6px 0px;
 }
@@ -76,7 +76,7 @@ label {
 button{
     display:inline-block;
     padding:1em 3em;
-    border:0.1em solid #FFFFFF;
+    border:0.1em solid #f8fcff;
     margin:0 0.3em 0.3em 0;
     border-radius:0.12em;
     box-sizing: border-box;
@@ -89,7 +89,7 @@ button{
 }
 
 button:hover{
-    color:#ffffff;
+    color:#f8fcff;
     background-color:#000000;
 }
 
