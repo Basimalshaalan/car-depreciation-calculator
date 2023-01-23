@@ -1,14 +1,41 @@
-// clicking submit
-function calculate() {
-  // get the value in the age input
-  let form_age = document.getElementById('age').value;
-  // add 2 to the value
-  // since javascript reads in the value as string, we must first convert it into an integer using parseInt
-  let new_age = parseInt(form_age) + 2;
+// clicking submit calculates the car's value and prints it
+function calculate_value() {
+  // get age value from the user input
+  let age = parseInt(document.getElementById('age').value);
+
+  // get price value from the user input
+  let price = parseInt(document.getElementById('price').value);
+
+  // get car model from user selection in dropdown
+  // will return HondaAccord, TC, FE, etc.
+  let model = document.getElementById('model').value;
+
+  // set the deprecation value based on the car type
+  let deprecation_percent = model_depreceation(model);
+
+  // calculate value of the car
+  let value = price - (price - price * deprecation_percent) * age;
+  
+  // change the text on the page to the car value
   document.getElementById('result').getElementsByTagName('span')[0].innerHTML =
-    new_age;
+    value;
 }
 
+//returns the given model's depreciation percentage
+function model_depreceation(model) {
+  switch (model) {
+    case 'HondaAccord':
+      return 0.958;
+    case 'TC':
+      return 0.952;
+    case 'FE':
+      return 0.926;
+    default:
+      return 0;
+  }
+}
+
+//just a demo function for testing
 function demo() {
   // get the value in the age input
   let form_age = document.getElementById('age').value;
@@ -18,5 +45,3 @@ function demo() {
   document.getElementById('result').getElementsByTagName('span')[0].innerHTML =
     new_age;
 }
-
-// document.getElementsByTagName('form')[0].on('submit', demo());
