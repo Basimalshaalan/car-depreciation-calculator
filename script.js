@@ -13,8 +13,12 @@ function calculate_value() {
   // set the deprecation value based on the car type
   let deprecation_percent = model_depreceation(model);
 
+  let varx = price * deprecation_percent;
+
+  let variay = price - varx;
+
   // calculate value of the car
-  let value = price - (price - price * deprecation_percent) * age;
+  let value = price - variay * age;
   
   // change the text on the page to the car value
   document.getElementById('result').getElementsByTagName('span')[0].innerHTML =
@@ -30,8 +34,34 @@ function model_depreceation(model) {
       return 0.952;
     case 'FE':
       return 0.926;
-    default:
-      return 0;
+      case 'FE':
+      return 0.926;
+    case 'NP':
+      return 0.928;
+    case 'FF':
+      return 0.952;
+    case 'GS':
+      return 0.942;
+    case 'AV':
+      return 0.946;
+    case 'HA':
+      return 0.944;
+    case 'ID':
+      return 0.853;
+    case 'TH':
+      return 0.86;
+    case 'NS':
+      return 0.952;
+    case 'TY':
+      return 0.96;
+    case 'HE':
+      return 0.956;
+    case 'TCC':
+      return 0.958;
+      default:
+        return 0;
+
+
   }
 }
 
