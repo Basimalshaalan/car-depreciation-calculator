@@ -19,7 +19,7 @@ function calculate_value() {
 
   // calculate value of the car
   let value = price - variay * age;
-  
+
   // change the text on the page to the car value
   document.getElementById('result').getElementsByTagName('span')[0].innerHTML =
     value;
@@ -33,8 +33,6 @@ function model_depreceation(model) {
     case 'TC':
       return 0.952;
     case 'FE':
-      return 0.926;
-      case 'FE':
       return 0.926;
     case 'NP':
       return 0.928;
@@ -58,10 +56,8 @@ function model_depreceation(model) {
       return 0.956;
     case 'TCC':
       return 0.958;
-      default:
-        return 0;
-
-
+    default:
+      return 0;
   }
 }
 
